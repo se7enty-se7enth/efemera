@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Эфемера - каталог товаров</title>
+		<meta name="author" content="Sofiya Pavlovna" />
+		<meta name="robots" content="index, follow" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Эфемера" />
+		<meta property="og:locale" content="ru_RU" />
+		<link rel="preload" href="./fonts/Literata-Regular.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="./fonts/Literata-ExtraLight.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/flower.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="./img/flower.png" />
+		<link rel="apple-touch-icon" href="./img/flower.png" />
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body class="catalog-page">
+		<noscript>
+			<p>Ваш браузер не поддерживает JavaScript, почти все элементы и функции сайта, буду работать некорректно или не будут работать вообще, настоятельно рекумендуем поменять бразуер или включить JavaScript</p>
+		</noscript>
+		<header class="header">
+			<div class="container header__container">
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a href="/" class="header__nav-link"> главная </a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#" class="header__nav-link active" aria-current="page"> каталог </a>
+						</li>
+						<li class="header__nav-item">
+							<a href="./index.html#services" class="header__nav-link"> услуги </a>
+						</li>
+						<li class="header__nav-item">
+							<a href="./index.html#about" class="header__nav-link"> о нас </a>
+						</li>
+						<li class="header__nav-item">
+							<a href="/" class="header__nav-link js-contact-link"> контакты </a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="catalog-main">
+			<section class="catalog">
+				<div class="container">
+					<div class="catalog__title title">
+						<h1>Каталог</h1>
+					</div>
+					<nav class="filter">
+						<ul class="filter__list">
+							<li class="filter__item">
+								<button class="filter__btn active" data-filter="all">Все</button>
+							</li>
+							<li class="filter__item">
+								<button class="filter__btn" data-filter="mono">Монобукеты</button>
+							</li>
+							<li class="filter__item">
+								<button class="filter__btn" data-filter="comp">Композиции</button>
+							</li>
+						</ul>
+					</nav>
+
+					<ul class="catalog__grid" id="catalogGrid">
+						<li class="catalog__item" data-category="mono">
+							<article class="catalog-card">
+								<a href="#" class="catalog-card__link">
+									<h2 class="visually-hidden">Букет №16</h2>
+									<div class="catalog-card__img">
+										<img src="./img/FameOne.png" alt="Букет №16" />
+									</div>
+									<div class="catalog-card__info">
+										<span class="catalog-card__number">№16</span>
+										<span class="catalog-card__line"></span>
+										<span class="catalog-card__price">2000 р</span>
+									</div>
+								</a>
+							</article>
+						</li>
+
+						<li class="catalog__item" data-category="comp">
+							<article class="catalog-card">
+								<a href="#" class="catalog-card__link">
+									<h2 class="visually-hidden">Композиция №10</h2>
+									<div class="catalog-card__img">
+										<img src="./img/FameOne.png" alt="Композиция №10" />
+									</div>
+									<div class="catalog-card__info">
+										<span class="catalog-card__number">№10</span>
+										<span class="catalog-card__line"></span>
+										<span class="catalog-card__price">4500 р</span>
+									</div>
+								</a>
+							</article>
+						</li>
+
+						<li class="catalog__item" data-category="mono">
+							<article class="catalog-card">
+								<a href="#" class="catalog-card__link">
+									<h2 class="visually-hidden">Букет №05</h2>
+									<div class="catalog-card__img">
+										<img src="./img/FameOne.png" alt="Букет №05" />
+									</div>
+									<div class="catalog-card__info">
+										<span class="catalog-card__number">№05</span>
+										<span class="catalog-card__line"></span>
+										<span class="catalog-card__price">2800 р</span>
+									</div>
+								</a>
+							</article>
+						</li>
+
+						<li class="catalog__item" data-category="comp">
+							<article class="catalog-card">
+								<a href="#" class="catalog-card__link">
+									<h2 class="visually-hidden">Композиция №10</h2>
+									<div class="catalog-card__img">
+										<img src="./img/FameOne.png" alt="Композиция №10" />
+									</div>
+									<div class="catalog-card__info">
+										<span class="catalog-card__number">№10</span>
+										<span class="catalog-card__line"></span>
+										<span class="catalog-card__price">4500 р</span>
+									</div>
+								</a>
+							</article>
+						</li>
+
+						<li class="catalog__item" data-category="mono">
+							<article class="catalog-card">
+								<a href="#" class="catalog-card__link">
+									<h2 class="visually-hidden">Букет №05</h2>
+									<div class="catalog-card__img">
+										<img src="./img/FameOne.png" alt="Букет №05" />
+									</div>
+									<div class="catalog-card__info">
+										<span class="catalog-card__number">№05</span>
+										<span class="catalog-card__line"></span>
+										<span class="catalog-card__price">2800 р</span>
+									</div>
+								</a>
+							</article>
+						</li>
+
+						<li class="catalog__item" data-category="comp">
+							<article class="catalog-card">
+								<a href="#" class="catalog-card__link">
+									<h2 class="visually-hidden">Композиция №10</h2>
+									<div class="catalog-card__img">
+										<img src="./img/FameOne.png" alt="Композиция №10" />
+									</div>
+									<div class="catalog-card__info">
+										<span class="catalog-card__number">№10</span>
+										<span class="catalog-card__line"></span>
+										<span class="catalog-card__price">4500 р</span>
+									</div>
+								</a>
+							</article>
+						</li>
+
+						<li class="catalog__item" data-category="mono">
+							<article class="catalog-card">
+								<a href="#" class="catalog-card__link">
+									<h2 class="visually-hidden">Букет №05</h2>
+									<div class="catalog-card__img">
+										<img src="./img/FameOne.png" alt="Букет №05" />
+									</div>
+									<div class="catalog-card__info">
+										<span class="catalog-card__number">№05</span>
+										<span class="catalog-card__line"></span>
+										<span class="catalog-card__price">2800 р</span>
+									</div>
+								</a>
+							</article>
+						</li>
+
+						<li class="catalog__item" data-category="comp">
+							<article class="catalog-card">
+								<a href="#" class="catalog-card__link">
+									<h2 class="visually-hidden">Композиция №10</h2>
+									<div class="catalog-card__img">
+										<img src="./img/FameOne.png" alt="Композиция №10" />
+									</div>
+									<div class="catalog-card__info">
+										<span class="catalog-card__number">№10</span>
+										<span class="catalog-card__line"></span>
+										<span class="catalog-card__price">4500 р</span>
+									</div>
+								</a>
+							</article>
+						</li>
+
+						<li class="catalog__item" data-category="mono">
+							<article class="catalog-card">
+								<a href="#" class="catalog-card__link">
+									<h2 class="visually-hidden">Букет №05</h2>
+									<div class="catalog-card__img">
+										<img src="./img/FameOne.png" alt="Букет №05" />
+									</div>
+									<div class="catalog-card__info">
+										<span class="catalog-card__number">№05</span>
+										<span class="catalog-card__line"></span>
+										<span class="catalog-card__price">2800 р</span>
+									</div>
+								</a>
+							</article>
+						</li>
+
+						<li class="catalog__item" data-category="comp">
+							<article class="catalog-card">
+								<a href="#" class="catalog-card__link">
+									<h2 class="visually-hidden">Композиция №10</h2>
+									<div class="catalog-card__img">
+										<img src="./img/FameOne.png" alt="Композиция №10" />
+									</div>
+									<div class="catalog-card__info">
+										<span class="catalog-card__number">№10</span>
+										<span class="catalog-card__line"></span>
+										<span class="catalog-card__price">4500 р</span>
+									</div>
+								</a>
+							</article>
+						</li>
+
+						<li class="catalog__item" data-category="mono">
+							<article class="catalog-card">
+								<a href="#" class="catalog-card__link">
+									<h2 class="visually-hidden">Букет №05</h2>
+									<div class="catalog-card__img">
+										<img src="./img/FameOne.png" alt="Букет №05" />
+									</div>
+									<div class="catalog-card__info">
+										<span class="catalog-card__number">№05</span>
+										<span class="catalog-card__line"></span>
+										<span class="catalog-card__price">2800 р</span>
+									</div>
+								</a>
+							</article>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+			<div class="modal-content" id="modalContent">
+				<div class="modal-decor modal-decor--left"></div>
+				<div class="modal-decor modal-decor--right"></div>
+
+				<button class="modal-close" id="modalClose" aria-label="Закрыть модальное окно">&times;</button>
+
+				<div class="modal-title" id="modalTitle">
+					<h2>Прямая связь</h2>
+				</div>
+				<div class="modal-subtitle">
+					<p>Выберите удобный мессенджер или напишите нам на почту.</p>
+				</div>
+
+				<div class="modal-actions">
+					<a href="tel:+79919712369" class="modal-btn">
+						<span class="icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+						</span>
+						+7 (999) 999-99-99
+					</a>
+					<a href="mailto:contact@devvizard.ru" class="modal-btn">
+						<span class="icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+								<polyline points="22,6 12,13 2,6"></polyline>
+							</svg>
+						</span>
+						contact@efemera.ru
+					</a>
+					<a href="/" class="modal-btn" target="_blank" rel="noopener noreferrer">
+						<span class="icon">
+							<svg fill="#000000" width="24px" height="24px" viewBox="0 0 24 24">
+								<path
+									d="M15.07294,2H8.9375C3.33331,2,2,3.33331,2,8.92706V15.0625C2,20.66663,3.32294,22,8.92706,22H15.0625C20.66669,22,22,20.67706,22,15.07288V8.9375C22,3.33331,20.67706,2,15.07294,2Zm3.07287,14.27081H16.6875c-.55206,0-.71875-.44793-1.70831-1.4375-.86463-.83331-1.22919-.9375-1.44794-.9375-.30206,0-.38544.08332-.38544.5v1.3125c0,.35419-.11456.5625-1.04162.5625a5.69214,5.69214,0,0,1-4.44794-2.66668A11.62611,11.62611,0,0,1,5.35419,8.77081c0-.21875.08331-.41668.5-.41668H7.3125c.375,0,.51044.16668.65625.55212.70831,2.08331,1.91669,3.89581,2.40625,3.89581.1875,0,.27081-.08331.27081-.55206V10.10413c-.0625-.97913-.58331-1.0625-.58331-1.41663a.36008.36008,0,0,1,.375-.33337h2.29169c.3125,0,.41662.15625.41662.53125v2.89587c0,.3125.13544.41663.22919.41663.1875,0,.33331-.10413.67706-.44788a11.99877,11.99877,0,0,0,1.79169-2.97919.62818.62818,0,0,1,.63544-.41668H17.9375c.4375,0,.53125.21875.4375.53125A18.20507,18.20507,0,0,1,16.41669,12.25c-.15625.23956-.21875.36456,0,.64581.14581.21875.65625.64582,1,1.05207a6.48553,6.48553,0,0,1,1.22912,1.70837C18.77081,16.0625,18.5625,16.27081,18.14581,16.27081Z"
+								/>
+							</svg>
+						</span>
+						ВК
+					</a>
+					<a href="https://t.me/yourlink" class="modal-btn" target="_blank" rel="noopener noreferrer">
+						<span class="icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M22 2L11 13"></path>
+								<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+							</svg>
+						</span>
+						Telegram
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="modal-overlay" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartModalTitle">
+			<div class="modal-content modal-content--cart">
+				<button class="modal-close cartModalClose" id="cartModalClose" aria-label="Закрыть модальное окно">&times;</button>
+
+				<div class="modal-title cartModalTitle" id="cartModalTitle">
+					<h2>Корзина</h2>
+				</div>
+
+				<div class="cart-body">
+					<div class="cart-body__info">
+						<div class="cart-body__img">
+							<img src="./" alt="Букет" class="js-cart-img" />
+						</div>
+						<div class="catalog-card__info">
+							<span class="catalog-card__number js-cart-number"></span>
+							<span class="catalog-card__line"></span>
+							<span class="catalog-card__price js-cart-price"></span>
+						</div>
+					</div>
+					<div class="cart-body__form">
+						<form action="#" id="orderForm" class="cart-form">
+							<input type="text" placeholder="ФИО" name="name" required />
+							<input type="text" placeholder="Адрес доставки" name="address" required />
+							<input type="tel" placeholder="Телефон" name="telephone" required pattern="[0-9]{10,12}" />
+							<input type="email" placeholder="Почта" name="email" required />
+							<div class="cart-form__group">
+								<label class="cart-form__label" for="date">Дата доставки:</label>
+								<input class="cart-form__input" type="date" id="date" name="delivery-date" required />
+							</div>
+							<select name="city" id="payment-select">
+								<option value="">Способ оплаты</option>
+								<option value="sbp">СБП</option>
+								<option value="vtb">ВТБ</option>
+								<option value="sberbankOnline">Сбербанк Онлайн</option>
+								<option value="mir">МИР</option>
+								<option value="nal">Наличными при получении</option>
+							</select>
+						</form>
+					</div>
+				</div>
+				<div class="cart-footer">
+					<button type="submit" form="orderForm" class="button uppercase">Готово</button>
+				</div>
+			</div>
+		</div>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

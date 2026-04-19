@@ -1,0 +1,32 @@
+:root {
+	--color-light: #f7f7f7;
+	--color-dark: #000;
+
+	--main-font: 'literata', sans-serif;
+
+	--container-width: 1600px;
+	--container-padding-x: 20px;
+}
+
+$transition-duration: 0.2s;
+
+$breakpoints: (
+	sm: 576px,
+	// телефоны
+	md: 768px,
+	// маленькие планшеты
+	lg: 1024px,
+	// планшеты/ноуты
+	xl: 1280px,
+	// стандартные десктопы
+	xxl: 1440px, // широкие мониторы
+);
+
+$anim-speed-enter: 0.8s;
+$anim-speed-exit: 0.4s;
+$anim-bezier: cubic-bezier(0.25, 1, 0.5, 1);
+$modal-text: #ffffff;
+$modal-accent: #222222;
+$modal-hover: #333;
+$modal-border: #333;
+$modal-shadow: rgba(0, 0, 0, 0.5);
