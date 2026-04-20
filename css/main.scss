@@ -324,6 +324,10 @@ a {
 			&__link {
 				max-width: 250px;
 			}
+
+			&__info {
+				font-size: 1.2rem;
+			}
 		}
 	}
 	&__button {
@@ -451,10 +455,8 @@ a {
 			@include m.down(md) {
 				grid-column: span 1;
 			}
-		}
 
-		@include m.down(sm) {
-			&:last-child {
+			@include m.down(sm) {
 				display: none;
 			}
 		}
@@ -498,6 +500,10 @@ a {
 			&__link {
 				max-width: 300px;
 				margin: 0 auto;
+			}
+
+			&__info {
+				font-size: 1.2rem;
 			}
 		}
 	}
@@ -788,7 +794,7 @@ a {
 	}
 
 	@include m.down(md) {
-		margin-bottom: 50px;
+		margin-bottom: 45px;
 
 		&__header {
 			margin-bottom: 25px;
@@ -816,6 +822,10 @@ a {
 	min-height: clamp(500px, 75dvh, 660px);
 	@include m.flex(column, flex-end, stretch, 0);
 	padding: 50px 70px;
+
+	br {
+		display: none;
+	}
 
 	&__socials {
 		margin-left: auto;
@@ -850,7 +860,11 @@ a {
 
 	@include m.down(sm) {
 		min-height: clamp(270px, 50dvh, 400px);
-		padding: 20px 30px;
+		padding: 15px 20px;
+
+		br {
+			display: block;
+		}
 
 		&__socials {
 			gap: 0;
