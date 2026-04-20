@@ -55,6 +55,11 @@ a {
 		max-width: 260px;
 		font-size: 1.2rem;
 	}
+
+	@include m.down(500px) {
+		max-width: 240px;
+		padding-block: 12px;
+	}
 }
 
 .title {
@@ -63,6 +68,10 @@ a {
 
 	@include m.down(md) {
 		font-size: 2rem;
+	}
+
+	@include m.down(sm) {
+		font-size: 1.7rem;
 	}
 }
 
@@ -86,6 +95,9 @@ a {
 			&:hover,
 			&.active {
 				color: #657926;
+			}
+			@include m.down(sm) {
+				font-size: 1.6rem;
 			}
 		}
 	}
@@ -128,7 +140,7 @@ a {
 			position: fixed;
 			top: 0;
 			right: 0;
-			width: 75vw;
+			width: 60vw;
 			height: 100vh;
 			transform: translateX(100%);
 			z-index: 3;
@@ -141,7 +153,7 @@ a {
 			flex-direction: column;
 			justify-content: flex-start;
 			align-items: stretch;
-			gap: 40px;
+			gap: 25px;
 		}
 
 		&__burger {
@@ -192,17 +204,12 @@ a {
 
 		@include m.down(md) {
 			padding: 20px 30px;
-			min-height: clamp(350px, 75dvh, 550px);
-		}
-
-		@include m.down(sm) {
-			padding: 15px 25px;
-			min-height: clamp(250px, 60dvh, 400px);
+			min-height: clamp(300px, 65dvh, 450px);
 		}
 
 		@include m.down(500px) {
-			padding: 15px 25px;
-			min-height: clamp(200px, 55dvh, 350px);
+			padding: 15px 20px;
+			min-height: clamp(180px, 50dvh, 330px);
 		}
 	}
 
@@ -218,6 +225,7 @@ a {
 
 	&__button {
 		margin-top: 42px;
+		padding-top: 8px;
 	}
 
 	&__sign {
@@ -228,7 +236,7 @@ a {
 
 	@include m.down(md) {
 		&__title {
-			font-size: clamp(3rem, 10vw, 7.188rem);
+			font-size: clamp(2.8rem, 8.5vw, 7.188rem);
 			line-height: 1.1;
 		}
 
@@ -248,7 +256,7 @@ a {
 
 	@include m.down(sm) {
 		&__info {
-			font-size: 1.2rem;
+			font-size: 1.1rem;
 		}
 
 		&__button {
@@ -257,7 +265,7 @@ a {
 
 		&__sign {
 			padding-top: 10px;
-			font-size: 1.1rem;
+			font-size: 1rem;
 		}
 	}
 }
@@ -270,14 +278,13 @@ a {
 		margin-block: 80px;
 	}
 
+	@include m.down(sm) {
+		margin-block: 60px;
+	}
+
 	&__header {
 		@include m.flex(column, center, center, 25px);
 		margin-bottom: 45px;
-
-		@include m.down(md) {
-			gap: 15px;
-			margin-bottom: 25px;
-		}
 	}
 
 	&__description {
@@ -287,10 +294,6 @@ a {
 	&__list {
 		@include m.flex(flex, center, center, 80px);
 		flex-wrap: wrap;
-
-		@include m.down(lg) {
-			gap: 40px;
-		}
 	}
 
 	.popular-product {
@@ -319,16 +322,36 @@ a {
 
 		@include m.down(sm) {
 			&__link {
-				max-width: 260px;
+				max-width: 250px;
 			}
 		}
 	}
 	&__button {
 		margin: 0 auto;
 		margin-top: 80px;
+		padding-top: 8px;
+	}
 
-		@include m.down(md) {
+	@include m.down(lg) {
+		&__list {
+			gap: 40px;
+		}
+	}
+
+	@include m.down(md) {
+		&__header {
+			gap: 15px;
+			margin-bottom: 25px;
+		}
+
+		&__button {
 			margin-top: 40px;
+		}
+	}
+
+	@include m.down(sm) {
+		&__description {
+			font-size: 1.3rem;
 		}
 	}
 }
@@ -344,13 +367,13 @@ a {
 	margin-bottom: 121px;
 
 	@include m.down(md) {
-		min-height: clamp(300px, 70dvh, 500px);
+		min-height: clamp(280px, 65dvh, 450px);
 		padding: 20px 30px;
-		margin-bottom: 80px;
+		margin-bottom: 60px;
 	}
 
 	@include m.down(sm) {
-		min-height: clamp(250px, 60dvh, 350px);
+		min-height: clamp(230px, 55dvh, 330px);
 		margin-bottom: 50px;
 	}
 
@@ -376,6 +399,17 @@ a {
 			font-size: 1.2rem;
 		}
 	}
+
+	@include m.down(sm) {
+		&__title {
+			font-size: clamp(2.8rem, 8.5vw, 7.188rem);
+			line-height: 1.1;
+		}
+
+		&__description {
+			font-size: 1rem;
+		}
+	}
 }
 
 .preview-catalog {
@@ -383,6 +417,10 @@ a {
 
 	@include m.down(md) {
 		margin-bottom: 80px;
+	}
+
+	@include m.down(sm) {
+		margin-bottom: 60px;
 	}
 
 	&__header {
@@ -398,7 +436,7 @@ a {
 			grid-template-columns: repeat(2, 1fr);
 		}
 
-		@include m.down(sm) {
+		@include m.down(500px) {
 			grid-template-columns: repeat(1, 1fr);
 		}
 	}
@@ -412,6 +450,12 @@ a {
 
 			@include m.down(md) {
 				grid-column: span 1;
+			}
+		}
+
+		@include m.down(sm) {
+			&:last-child {
+				display: none;
 			}
 		}
 	}
@@ -452,7 +496,7 @@ a {
 
 		@include m.down(sm) {
 			&__link {
-				max-width: 350px;
+				max-width: 300px;
 				margin: 0 auto;
 			}
 		}
@@ -460,6 +504,7 @@ a {
 
 	&__button {
 		margin: 0 auto;
+		padding-top: 8px;
 	}
 
 	@include m.down(md) {
@@ -474,6 +519,10 @@ a {
 
 	@include m.down(md) {
 		margin-bottom: 80px;
+	}
+
+	@include m.down(sm) {
+		margin-bottom: 60px;
 	}
 
 	&__header {
@@ -494,7 +543,7 @@ a {
 		margin: 0 auto;
 
 		@include m.down(sm) {
-			max-width: 360px;
+			max-width: 300px;
 		}
 	}
 
@@ -707,6 +756,16 @@ a {
 				}
 			}
 		}
+
+		@include m.down(sm) {
+			&__trigger {
+				font-size: 1.3rem;
+			}
+
+			&__text {
+				font-size: 1.1rem;
+			}
+		}
 	}
 
 	&__img,
@@ -739,6 +798,12 @@ a {
 			font-size: 1.4rem;
 			text-align: center;
 			margin-bottom: 30px;
+		}
+	}
+
+	@include m.down(sm) {
+		&__description {
+			font-size: 1.3rem;
 		}
 	}
 }
@@ -784,15 +849,19 @@ a {
 	}
 
 	@include m.down(sm) {
-		min-height: clamp(300px, 55dvh, 500px);
+		min-height: clamp(270px, 50dvh, 400px);
 		padding: 20px 30px;
 
+		&__socials {
+			gap: 0;
+		}
+
 		&__social-link {
-			font-size: 1.5rem;
+			font-size: 1.3rem;
 		}
 
 		&__info {
-			font-size: 1.25rem;
+			font-size: 1.1rem;
 		}
 	}
 }
