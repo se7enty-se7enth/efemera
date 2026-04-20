@@ -1062,6 +1062,18 @@ a {
 			background-image: url('../img/modalFlower.png');
 		}
 	}
+
+	@include m.down(sm) {
+		padding: 25px;
+
+		.modal-subtitle {
+			font-size: 1.1rem;
+		}
+
+		.modal-actions .modal-btn {
+			padding: 15px 10px;
+		}
+	}
 }
 
 @keyframes slideInRight {
@@ -1098,6 +1110,16 @@ a {
 
 		&__form {
 			flex: 1;
+		}
+
+		@include m.down(md) {
+			flex-direction: column;
+			align-items: center;
+			margin-top: 25px;
+
+			&__img {
+				display: none;
+			}
 		}
 	}
 
@@ -1139,6 +1161,14 @@ a {
 			&:focus {
 				box-shadow: inset 3px 3px 7px #bebebe;
 				border-radius: 0;
+			}
+		}
+
+		@include m.down(sm) {
+			input,
+			label,
+			select {
+				font-size: 1rem;
 			}
 		}
 	}
