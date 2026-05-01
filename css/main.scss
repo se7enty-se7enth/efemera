@@ -535,25 +535,45 @@ a {
 		margin-bottom: 115px;
 	}
 
-	&__list {
-		@include m.flex(flex, center, center, 70px);
-		flex-wrap: wrap;
+	&__slider {
+		position: relative;
+		margin-right: 0;
+		padding-bottom: 50px;
+	}
 
-		@include m.down(lg) {
-			gap: 40px;
+	&__pagination {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		@include m.flex(flex, center, center, 10px);
+
+		.swiper-pagination-bullet {
+			width: 12px;
+			height: 12px;
+			background-color: #d1d1d1;
+			border-radius: 50%;
+			opacity: 1;
+			margin: 0 !important;
+			transition: all 0.3s ease;
+			cursor: pointer;
+
+			&-active {
+				background-color: #8da73b;
+				width: 20px;
+				border-radius: 5px;
+			}
 		}
 	}
 
 	&__item {
-		max-width: 403px;
-		margin: 0 auto;
-
-		@include m.down(sm) {
-			max-width: 300px;
-		}
+		height: auto;
 	}
 
 	.service-card {
+		max-width: 350px;
+		margin: 0 auto;
+
 		&__img {
 			margin-bottom: 15px;
 			overflow: hidden;
@@ -576,8 +596,18 @@ a {
 		&__specification {
 			font-size: 1.25rem;
 		}
+	}
 
-		@include m.down(md) {
+	@include m.down(md) {
+		&__header {
+			margin-bottom: 40px;
+		}
+	}
+
+	@include m.down(sm) {
+		.service-card {
+			max-width: 250px;
+
 			&__descriptions {
 				gap: 10px;
 			}
@@ -587,30 +617,8 @@ a {
 			}
 
 			&__specification {
-				font-size: 1.1rem;
+				font-size: 1rem;
 			}
-
-			&__header {
-				margin-bottom: 30px;
-			}
-
-			&__img {
-				aspect-ratio: 6 / 7;
-
-				img {
-					object-position: 0px -50px;
-				}
-			}
-		}
-	}
-
-	@include m.down(md) {
-		&__header {
-			margin-bottom: 30px;
-		}
-
-		&__list {
-			gap: 25px;
 		}
 	}
 }

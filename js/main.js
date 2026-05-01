@@ -179,3 +179,29 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	})
 })
+
+const servicesSwiper = new Swiper('.services__slider', {
+	slidesPerView: 1,
+	spaceBetween: 20,
+	grabCursor: true,
+
+	observer: true,
+	observeParents: true,
+	watchOverflow: true,
+
+	pagination: {
+		el: '.services__pagination',
+		clickable: true,
+	},
+
+	breakpoints: {
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 30,
+		},
+		1024: {
+			slidesPerView: 3,
+			spaceBetween: 70,
+		}
+	}
+})

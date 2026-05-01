@@ -14,6 +14,7 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./img/flower.png" />
 		<link rel="icon" type="image/png" sizes="192x192" href="./img/flower.png" />
 		<link rel="apple-touch-icon" href="./img/flower.png" />
+		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body class="index">
@@ -236,56 +237,59 @@
 							<h2>Услуги</h2>
 						</div>
 					</div>
-					<ul class="services__list">
-						<li class="services__item">
-							<article class="service-card">
-								<div class="service-card__img">
-									<img src="./img/servicesFirst.png" alt="Милая фотография букета цветов" />
-								</div>
-								<div class="service-card__descriptions">
-									<div class="service-card__title">
-										<h3>Декор мероприятий</h3>
+					<div class="swiper services__slider">
+						<ul class="swiper-wrapper services__list">
+							<li class="swiper-slide services__item">
+								<article class="service-card">
+									<div class="service-card__img">
+										<img src="./img/servicesFirst.png" alt="Милая фотография букета цветов" />
 									</div>
-									<span class="service-card__line"></span>
-									<div class="service-card__specification">
-										<p>Оформляем цветами важные события: свадьбы, дни рождения, корпоративы и фотосессии.</p>
+									<div class="service-card__descriptions">
+										<div class="service-card__title">
+											<h3>Декор мероприятий</h3>
+										</div>
+										<span class="service-card__line"></span>
+										<div class="service-card__specification">
+											<p>Оформляем цветами важные события: свадьбы, дни рождения, корпоративы и фотосессии.</p>
+										</div>
 									</div>
-								</div>
-							</article>
-						</li>
-						<li class="services__item">
-							<article class="service-card">
-								<div class="service-card__img">
-									<img src="./img/servicesSecond.png" alt="Милая фотография букета цветов" />
-								</div>
-								<div class="service-card__descriptions">
-									<div class="service-card__title">
-										<h3>Подарочные наборы</h3>
+								</article>
+							</li>
+							<li class="swiper-slide services__item">
+								<article class="service-card">
+									<div class="service-card__img">
+										<img src="./img/servicesSecond.png" alt="Милая фотография букета цветов" />
 									</div>
-									<span class="service-card__line"></span>
-									<div class="service-card__specification">
-										<p>Собираем подарочные наборы с цветами, открытками и приятными дополнениями.</p>
+									<div class="service-card__descriptions">
+										<div class="service-card__title">
+											<h3>Подарочные наборы</h3>
+										</div>
+										<span class="service-card__line"></span>
+										<div class="service-card__specification">
+											<p>Собираем подарочные наборы с цветами, открытками и приятными дополнениями.</p>
+										</div>
 									</div>
-								</div>
-							</article>
-						</li>
-						<li class="services__item">
-							<article class="service-card">
-								<div class="service-card__img">
-									<img src="./img/servicesThirth.png" alt="Милая фотография букета цветов" />
-								</div>
-								<div class="service-card__descriptions">
-									<div class="service-card__title">
-										<h3>Композиции в интерьер</h3>
+								</article>
+							</li>
+							<li class="swiper-slide services__item">
+								<article class="service-card">
+									<div class="service-card__img">
+										<img src="./img/servicesThirth.png" alt="Милая фотография букета цветов" />
 									</div>
-									<span class="service-card__line"></span>
-									<div class="service-card__specification">
-										<p>Композиции для дома, офиса или кафе.Помогаем добавить уюта и эстетики в любое пространство.</p>
+									<div class="service-card__descriptions">
+										<div class="service-card__title">
+											<h3>Композиции в интерьер</h3>
+										</div>
+										<span class="service-card__line"></span>
+										<div class="service-card__specification">
+											<p>Композиции для дома, офиса или кафе.Помогаем добавить уюта и эстетики в любое пространство.</p>
+										</div>
 									</div>
-								</div>
-							</article>
-						</li>
-					</ul>
+								</article>
+							</li>
+						</ul>
+						<div class="swiper-pagination services__pagination"></div>
+					</div>
 				</div>
 			</section>
 
@@ -505,6 +509,7 @@
 				</div>
 			</div>
 		</div>
+		<script src="./js/swiper-bundle.min.js"></script>
 		<script src="./js/main.js"></script>
 	</body>
 </html>
