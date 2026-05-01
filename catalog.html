@@ -20,9 +20,14 @@
 		<noscript>
 			<p>Ваш браузер не поддерживает JavaScript, почти все элементы и функции сайта, буду работать некорректно или не будут работать вообще, настоятельно рекумендуем поменять бразуер или включить JavaScript</p>
 		</noscript>
-		<header class="header">
+		<header class="header" id="header">
 			<div class="container header__container">
-				<nav class="header__nav">
+				<button class="header__burger burger" id="burger" aria-label="Открыть меню">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<nav class="header__nav" id="headerNav">
 					<ul class="header__nav-list">
 						<li class="header__nav-item">
 							<a href="/" class="header__nav-link"> главная </a>
@@ -60,6 +65,9 @@
 							<li class="filter__item">
 								<button class="filter__btn" data-filter="comp">Композиции</button>
 							</li>
+							<li class="filter__item">
+								<button class="filter__btn" data-filter="busk">В корзинке</button>
+							</li>
 						</ul>
 					</nav>
 
@@ -96,7 +104,39 @@
 							</article>
 						</li>
 
+						<li class="catalog__item" data-category="busk">
+							<article class="catalog-card">
+								<a href="#" class="catalog-card__link">
+									<h2 class="visually-hidden">Букет №16</h2>
+									<div class="catalog-card__img">
+										<img src="./img/FameOne.png" alt="Букет №16" />
+									</div>
+									<div class="catalog-card__info">
+										<span class="catalog-card__number">№16</span>
+										<span class="catalog-card__line"></span>
+										<span class="catalog-card__price">2000 р</span>
+									</div>
+								</a>
+							</article>
+						</li>
+
 						<li class="catalog__item" data-category="mono">
+							<article class="catalog-card">
+								<a href="#" class="catalog-card__link">
+									<h2 class="visually-hidden">Композиция №10</h2>
+									<div class="catalog-card__img">
+										<img src="./img/FameOne.png" alt="Композиция №10" />
+									</div>
+									<div class="catalog-card__info">
+										<span class="catalog-card__number">№10</span>
+										<span class="catalog-card__line"></span>
+										<span class="catalog-card__price">4500 р</span>
+									</div>
+								</a>
+							</article>
+						</li>
+
+						<li class="catalog__item" data-category="comp">
 							<article class="catalog-card">
 								<a href="#" class="catalog-card__link">
 									<h2 class="visually-hidden">Букет №05</h2>
@@ -112,7 +152,7 @@
 							</article>
 						</li>
 
-						<li class="catalog__item" data-category="comp">
+						<li class="catalog__item" data-category="busk">
 							<article class="catalog-card">
 								<a href="#" class="catalog-card__link">
 									<h2 class="visually-hidden">Композиция №10</h2>
@@ -160,7 +200,7 @@
 							</article>
 						</li>
 
-						<li class="catalog__item" data-category="mono">
+						<li class="catalog__item" data-category="busk">
 							<article class="catalog-card">
 								<a href="#" class="catalog-card__link">
 									<h2 class="visually-hidden">Букет №05</h2>
@@ -171,6 +211,22 @@
 										<span class="catalog-card__number">№05</span>
 										<span class="catalog-card__line"></span>
 										<span class="catalog-card__price">2800 р</span>
+									</div>
+								</a>
+							</article>
+						</li>
+
+						<li class="catalog__item" data-category="mono">
+							<article class="catalog-card">
+								<a href="#" class="catalog-card__link">
+									<h2 class="visually-hidden">Букет №16</h2>
+									<div class="catalog-card__img">
+										<img src="./img/FameOne.png" alt="Букет №16" />
+									</div>
+									<div class="catalog-card__info">
+										<span class="catalog-card__number">№16</span>
+										<span class="catalog-card__line"></span>
+										<span class="catalog-card__price">2000 р</span>
 									</div>
 								</a>
 							</article>
@@ -179,22 +235,6 @@
 						<li class="catalog__item" data-category="comp">
 							<article class="catalog-card">
 								<a href="#" class="catalog-card__link">
-									<h2 class="visually-hidden">Композиция №10</h2>
-									<div class="catalog-card__img">
-										<img src="./img/FameOne.png" alt="Композиция №10" />
-									</div>
-									<div class="catalog-card__info">
-										<span class="catalog-card__number">№10</span>
-										<span class="catalog-card__line"></span>
-										<span class="catalog-card__price">4500 р</span>
-									</div>
-								</a>
-							</article>
-						</li>
-
-						<li class="catalog__item" data-category="mono">
-							<article class="catalog-card">
-								<a href="#" class="catalog-card__link">
 									<h2 class="visually-hidden">Букет №05</h2>
 									<div class="catalog-card__img">
 										<img src="./img/FameOne.png" alt="Букет №05" />
@@ -208,33 +248,17 @@
 							</article>
 						</li>
 
-						<li class="catalog__item" data-category="comp">
+						<li class="catalog__item" data-category="busk">
 							<article class="catalog-card">
 								<a href="#" class="catalog-card__link">
-									<h2 class="visually-hidden">Композиция №10</h2>
+									<h2 class="visually-hidden">Букет №16</h2>
 									<div class="catalog-card__img">
-										<img src="./img/FameOne.png" alt="Композиция №10" />
+										<img src="./img/FameOne.png" alt="Букет №16" />
 									</div>
 									<div class="catalog-card__info">
-										<span class="catalog-card__number">№10</span>
+										<span class="catalog-card__number">№16</span>
 										<span class="catalog-card__line"></span>
-										<span class="catalog-card__price">4500 р</span>
-									</div>
-								</a>
-							</article>
-						</li>
-
-						<li class="catalog__item" data-category="mono">
-							<article class="catalog-card">
-								<a href="#" class="catalog-card__link">
-									<h2 class="visually-hidden">Букет №05</h2>
-									<div class="catalog-card__img">
-										<img src="./img/FameOne.png" alt="Букет №05" />
-									</div>
-									<div class="catalog-card__info">
-										<span class="catalog-card__number">№05</span>
-										<span class="catalog-card__line"></span>
-										<span class="catalog-card__price">2800 р</span>
+										<span class="catalog-card__price">2000 р</span>
 									</div>
 								</a>
 							</article>
